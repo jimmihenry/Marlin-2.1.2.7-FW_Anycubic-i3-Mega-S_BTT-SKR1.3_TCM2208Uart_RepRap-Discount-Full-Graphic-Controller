@@ -552,7 +552,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 5
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -560,7 +560,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 5
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
@@ -683,9 +683,9 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-    #define DEFAULT_KP_LIST {  15.94,  15.94 }
-    #define DEFAULT_KI_LIST {   1.17,   1.17 }
-    #define DEFAULT_KD_LIST { 54.19, 54.19 }
+    #define DEFAULT_KP_LIST {  21.00,  21.00 }
+    #define DEFAULT_KI_LIST {   1.25,   1.257 }
+    #define DEFAULT_KD_LIST { 88.00, 88.00 }
   #else
     #define DEFAULT_KP  15.94
     #define DEFAULT_KI   1.17
